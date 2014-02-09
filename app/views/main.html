@@ -19,7 +19,11 @@
   <p><a class="btn btn-lg btn-success" ng-href="#">Make an appointment!</a></p>
 </div>
 
-<div class="row"></div>
+<table class='table table-striped'>
+  <tr ng-repeat="barber in barbers">
+    <td>{{barber.name}}</td>
+  </tr>
+</table>
 
 <div class="footer">
   <p>Get a haircut!</p>
